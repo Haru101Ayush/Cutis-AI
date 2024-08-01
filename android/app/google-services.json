@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "433496120553",
+    "project_id": "cutis-ai",
+    "storage_bucket": "cutis-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433496120553:android:c5b25515b21c7b55cda478",
+        "android_client_info": {
+          "package_name": "com.cutisai.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA92zSfks4NgED04JwN2IuqOh1FyuAIFYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433496120553:android:5ba00934ce43bdd9cda478",
+        "android_client_info": {
+          "package_name": "com.example.cutis_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA92zSfks4NgED04JwN2IuqOh1FyuAIFYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

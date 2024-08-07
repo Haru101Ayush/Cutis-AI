@@ -4,6 +4,8 @@ import 'package:image_picker/image_picker.dart';
 import 'dart:convert';
 
 class UploadImageScreen extends StatefulWidget {
+  const UploadImageScreen({super.key});
+
   @override
   _UploadImageScreenState createState() => _UploadImageScreenState();
 }
@@ -53,7 +55,7 @@ class _UploadImageScreenState extends State<UploadImageScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }
 

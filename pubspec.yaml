@@ -51,6 +51,7 @@ dependencies:
   firebase_analytics: ^10.8.5
   in_app_purchase: ^3.1.13
 
+  http: any
 dev_dependencies:
   cupertino_icons: ^1.0.6
   flutter_test:

@@ -1,24 +1,14 @@
-import 'dart:async';
 import 'package:google_fonts/google_fonts.dart';
-import 'DashBoard Data/DashBoard.dart';
 import 'package:flutter/material.dart';
 
 class Splash_screen extends StatefulWidget {
+  const Splash_screen({super.key});
+
   @override
   State<Splash_screen> createState() => _Splash_screenState();
 }
 
 class _Splash_screenState extends State<Splash_screen> {
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 2), () {    // To remove splash screeen after 2 seconds
-      Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => MyHomePage(),
-          ));
-    });
-  }
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

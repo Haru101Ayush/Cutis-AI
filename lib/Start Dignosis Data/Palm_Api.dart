@@ -18,9 +18,9 @@ Future<String> Prompt_Symptom(String prompt) async {
       apiKey: 'AIzaSyC2BRBHnl3_5IaupF7EAUK-Lc0VDhyUWTA');
 
   // Return the generated text.
-  final ai_response = response.candidates.map((candidate) => candidate.output).join('\n');
+  final aiResponse = response.candidates.map((candidate) => candidate.output).join('\n');
 
-  return ai_response;
+  return aiResponse;
 }
 
 
@@ -38,9 +38,9 @@ Future<String> AI_report(String prompt) async {
       apiKey: 'AIzaSyC2BRBHnl3_5IaupF7EAUK-Lc0VDhyUWTA');
 
   // Return the generated text.
-  final ai_response = response.candidates.map((candidate) => candidate.output).join('\n');
+  final aiResponse = response.candidates.map((candidate) => candidate.output).join('\n');
 
-  return ai_response;
+  return aiResponse;
 }
 
 
@@ -51,9 +51,9 @@ Future<String> AI_report(String prompt) async {
 
 
 Future<String> uploadImage() async {
-  final ImagePicker _picker = ImagePicker();
+  final ImagePicker picker = ImagePicker();
 
-  final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+  final XFile? image = await picker.pickImage(source: ImageSource.gallery);
 
   if (image != null) {
     try {

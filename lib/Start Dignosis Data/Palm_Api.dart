@@ -1,48 +1,16 @@
-import 'package:google_generative_language_api/google_generative_language_api.dart';
+import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 import 'dart:convert';
 
+final model = GenerativeModel(model: 'gemini-1.5-flash', apiKey: 'AIzaSyBnOdr_8c5P8IYNUkfMTaKOQiV2BFwy59c');
 
-Future<String> Prompt_Symptom(String prompt) async {
-  // Create a request to the PaLM 2 API.
-  final request =  GenerateTextRequest(
-    prompt: TextPrompt(text: prompt),
-    maxOutputTokens: 10000,
-  );
-
-  // Make the request to the PaLM 2 API.
-  final response = await GenerativeLanguageAPI.generateText(
-      modelName: 'models/text-bison-001',
-      request: request,
-      apiKey: 'AIzaSyC2BRBHnl3_5IaupF7EAUK-Lc0VDhyUWTA');
-
-  // Return the generated text.
-  final aiResponse = response.candidates.map((candidate) => candidate.output).join('\n');
-
-  return aiResponse;
+Future<String?> Cutis_bot(String prompt) async {
+  final content = [Content.text(prompt)];
+  final response = await model.generateContent(content);
+  print(response.text);
+  return response.text;
 }
-
-
-Future<String> AI_report(String prompt) async {
-  // Create a request to the PaLM 2 API.
-  final request =  GenerateTextRequest(
-    prompt: TextPrompt(text:'Im a patient suffering from $prompt give me a step by step first Aid guide?'),
-    maxOutputTokens: 10000,
-  );
-
-  // Make the request to the PaLM 2 API.
-  final response = await GenerativeLanguageAPI.generateText(
-      modelName: 'models/text-bison-001',
-      request: request,
-      apiKey: 'AIzaSyC2BRBHnl3_5IaupF7EAUK-Lc0VDhyUWTA');
-
-  // Return the generated text.
-  final aiResponse = response.candidates.map((candidate) => candidate.output).join('\n');
-
-  return aiResponse;
-}
-
 
 //-------------------------------------------------------------------------------------------------->>>>>>>>>
 // ----------------------------------- for uploading the image file -------------------------------->>>>>>>>>

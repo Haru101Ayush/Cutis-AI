@@ -32,6 +32,7 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       height: 200.h,
                       width: double.infinity,
+                      padding:  EdgeInsets.only(top: 10.h, bottom: 20.h, left: 8.w, right: 8.w),
                       decoration: BoxDecoration(
                         color: PrimaryColor,
                         borderRadius: BorderRadius.only(
@@ -39,20 +40,47 @@ class _DashboardState extends State<Dashboard> {
                           bottomRight: Radius.circular(20),
                         ),
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(height: 30.h),
-                            Text(
-                              'Dashboard',
-                              style: GoogleFonts.bebasNeue(
-                                fontSize: 40.sp,
-                              ),
-                            )
-                          ],
-                        ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                             Row(
+                               children: [
+                                 Image(image: AssetImage('lib/Assects/logo_white.png'),height: 52.h,width: 52.w,),
+                                 SizedBox(width: 5.w),
+                                 Text(
+                                   'Cutis-AI',
+                                   style: GoogleFonts.dmSans(
+                                     color: OnPrimaryColor,
+                                     fontSize: 20.sp,
+                                   ),
+                                 ),
+                               ],
+                             ),
+                              Spacer(),
+                              CircleAvatar(
+                                radius: 20.r,
+                                backgroundImage: AssetImage('lib/Assects/Ellipse 4.png'),
+                              )
+                            ],
+                          ),
+                          Spacer(),
+                          Text(
+                            'Hello, User !',
+                            style: GoogleFonts.poppins(
+                              color: OnPrimaryColor,
+                              fontSize: 20.sp,
+                            ),
+                          ),
+                          Text(
+                            'We have tailored best experience and Personalized Care at Your Fingertips !',
+                            style: GoogleFonts.poppins(
+                              color: OnPrimaryColor,
+                              fontSize: 12.sp,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(height: 30.h),
@@ -75,7 +103,7 @@ class _DashboardState extends State<Dashboard> {
                                 'See all',
                                 style: GoogleFonts.dmSans(
                                   color: SecondaryColor,
-                                  fontSize: 18.sp,
+                                  fontSize: 15.sp,
                                 ),
                               ),
                             ],
@@ -126,15 +154,14 @@ class _DashboardState extends State<Dashboard> {
                                             'Diagnosis',
                                             style: GoogleFonts.poppins(
                                               color: Textcolor,
-                                              fontSize: 18.sp,
+                                              fontSize: 15.sp,
                                             ),
                                           ),
-                                          SizedBox(height: 5.h),
                                           Text(
                                             'Assess skin condition by checking for abnormalities or changes in texture.',
                                             style: GoogleFonts.poppins(
                                               color: Textcolor,
-                                              fontSize: 12.sp,
+                                              fontSize: 11.sp,
                                             ),
                                           ),
                                         ],
@@ -165,18 +192,18 @@ class _DashboardState extends State<Dashboard> {
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Text(
-                                          'Diagnosis',
+                                          'Skin care',
                                           style: GoogleFonts.poppins(
                                             color: Textcolor,
-                                            fontSize: 18.sp,
+                                            fontSize: 15.sp,
                                           ),
                                         ),
                                         SizedBox(height: 5.h),
                                         Text(
-                                          'Assess skin condition by checking for abnormalities or changes in texture.',
+                                          'Evaluate your skin by ensuring it addresses specific skin concerns consistently.',
                                           style: GoogleFonts.poppins(
                                             color: Textcolor,
-                                            fontSize: 12.sp,
+                                            fontSize: 11.sp,
                                           ),
                                         ),
                                       ],
@@ -206,18 +233,18 @@ class _DashboardState extends State<Dashboard> {
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Text(
-                                          'Diagnosis',
+                                          'Consult a Dermatologist',
                                           style: GoogleFonts.poppins(
                                             color: Textcolor,
-                                            fontSize: 18.sp,
+                                            fontSize: 15.sp,
                                           ),
                                         ),
                                         SizedBox(height: 5.h),
                                         Text(
-                                          'Assess skin condition by checking for abnormalities or changes in texture.',
+                                          'Consult a doctor for professional evaluation and treatment.',
                                           style: GoogleFonts.poppins(
                                             color: Textcolor,
-                                            fontSize: 12.sp,
+                                            fontSize: 11.sp,
                                           ),
                                         ),
                                       ],

@@ -145,14 +145,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.10"
-  equatable:
-    dependency: transitive
-    description:
-      name: equatable
-      sha256: c2b87cb7756efdf69892005af546c56c0b5037f54d2a88269b4f347a505e3ca2
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -408,14 +400,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.2.1"
-  google_generative_language_api:
+  google_generative_ai:
     dependency: "direct main"
     description:
-      name: google_generative_language_api
-      sha256: "1f8942dfffbe92ad3c816fffe3aab6becf1ad55c2892eadf1893a78eb04726a4"
+      name: google_generative_ai
+      sha256: e2f4c0ac13f0898f670ce5ac0dc4501ebe09b96f9d59163724380d9aa82065be
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.1"
+    version: "0.4.4"
   google_identity_services_web:
     dependency: transitive
     description:

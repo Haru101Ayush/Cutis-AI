@@ -32,7 +32,6 @@ dependencies:
     sdk: flutter
   flutter_riverpod: ^2.4.9
   google_fonts: ^6.1.0
-  google_generative_language_api: ^0.2.1
   flutter_screenutil: ^5.9.0
   lottie: ^3.0.0
   package_info: ^2.0.0
@@ -52,6 +51,7 @@ dependencies:
   in_app_purchase: ^3.1.13
 
   http: any
+  google_generative_ai: ^0.4.4
 dev_dependencies:
   cupertino_icons: ^1.0.6
   flutter_test:

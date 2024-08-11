@@ -37,6 +37,7 @@ class _Chat_UI extends ConsumerState<Chat_UI> {
 
   @override
   void initState() {
+    send_media();
     super.initState();
   }
 
